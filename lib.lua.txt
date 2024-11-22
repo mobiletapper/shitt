@@ -47,7 +47,7 @@ local Library = {
 	RiskColor = Color3.fromRGB(255, 50, 50),
 
 	Black = Color3.new(0, 0, 0);
-	Font = Enum.Font.GothamSemibold,
+	Font = Enum.Font.Gotham,
 
 	OpenedFrames = {};
 	DependencyBoxes = {};
@@ -72,7 +72,7 @@ pcall(function() Library.DevicePlatform = InputService:GetPlatform(); end); -- F
 Library.IsMobile = (Library.DevicePlatform == Enum.Platform.Android or Library.DevicePlatform == Enum.Platform.IOS);
 
 if Library.IsMobile then
-	Library.MinSize = Vector2.new(350, 150);
+	Library.MinSize = Vector2.new(450, 350);
 end
 
 local RainbowStep = 0
